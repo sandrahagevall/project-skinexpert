@@ -1,0 +1,53 @@
+body {
+  background: white;
+  color: #b5bca8;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* h1, h2... osv {
+font-family: 'Julius Sans One', sans-serif;
+}*/
+
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-nav-link {
+  font-family: 'Julius Sans One', sans-serif;
+  color: #b5bca8;
+  text-decoration: none;
+  font-size: 25px;
+  margin: 5px;
+  padding: 5px 10px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.header-nav-link:hover {
+  color: #381f1f;
+  transform: scale(1.1);
+}
+
+.logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 300px;
+  display: block;
+}
