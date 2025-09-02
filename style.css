@@ -27,7 +27,8 @@ font-family: 'Julius Sans One', sans-serif;
   font-family: 'Julius Sans One', sans-serif;
   color: #b5bca8;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
+  font-weight: 600;
   margin: 5px;
   padding: 5px 10px;
   transition: color 0.3s, transform 0.3s;
@@ -42,12 +43,27 @@ font-family: 'Julius Sans One', sans-serif;
   width: 100%;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 
 .logo {
   width: 100%;
-  height: auto;
+  height: 40vh;
   object-fit: cover;
-  max-height: 300px;
   display: block;
+}
+
+#owner {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.owner-img {
+  width: 200%;
+  height: 200%;
+  max-width: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
 }
