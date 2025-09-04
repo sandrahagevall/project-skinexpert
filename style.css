@@ -20,7 +20,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 80px;
     background-color: white;
     position: fixed;
     top: 0;
@@ -32,7 +32,7 @@ h1 {
   .navbar-left {
     display: flex;
     align-items: center;
-    margin-left: 100px;
+    padding-left: 80px;
   }
 
   .logo {
@@ -43,7 +43,7 @@ h1 {
   .navbar-right {
     display: flex;
     align-items: center;
-    margin-right: 200px;
+    padding-right: 80px;
   }
 
   .nav-links {
@@ -71,6 +71,62 @@ h1 {
   }
 }
 
+@media (min-width:600px) and (max-width: 800px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .header-nav-link {
+    font-size: 16px;
+    margin: 3px;
+    padding: 3px 6px;
+  }
+
+  .logo {
+    height: 50px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 940px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  .nav-links {
+    gap: 30px;
+  }
+
+  .header-nav-link {
+    font-size: 18px;
+    margin: 4px;
+    padding: 4px 8px;
+  }
+
+  .logo {
+    height: 60px;
+  }
+}
 
 .hero-image {
   width: 100%;
@@ -111,16 +167,8 @@ button:hover {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 10px;
   padding: 20px;
-  max-width: 1800px;
   margin: 0 auto;
   justify-content: center;
-}
-
-@media (min-width: 1600px) {
-  .grid-container {
-    padding: 80px;
-  }
-
 }
 
 .grid-card {
@@ -140,6 +188,16 @@ button:hover {
 }
 
 @media (min-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1200px;
+    padding: 40px;
+  }
+
+  .grid-card {
+    grid-column: auto;
+  }
+
   .grid-card:nth-child(1) {
     grid-column: span 3;
   }
@@ -156,6 +214,16 @@ button:hover {
 }
 
 @media (min-width: 1600px) {
+  .grid-container {
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 1800px;
+    padding: 80px;
+  }
+
+  .grid-card {
+    grid-column: auto;
+  }
+
   .grid-card {
     grid-column: span 1;
   }
