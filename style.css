@@ -11,39 +11,66 @@ h1 {
 }
 
 .navbar {
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
+  display: none
 }
 
-.nav-links {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 20px;
-  padding: 10px 0;
+
+@media (min-width: 600px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+  }
+
+  .logo {
+    height: 70px;
+    margin: 0;
+  }
+
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    margin-right: 200px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0;
+    gap: 40px;
+  }
+
+  .header-nav-link {
+    font-family: "Julius Sans One", sans-serif;
+    color: #b5bca8;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 5px;
+    padding: 5px 10px;
+    transition: color 0.3s, transform 0.3s;
+  }
+
+  .header-nav-link:hover {
+    color: #381f1f;
+    transform: scale(1.1);
+  }
 }
 
-.header-nav-link {
-  font-family: "Julius Sans One", sans-serif;
-  color: #b5bca8;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 700;
-  margin: 5px;
-  padding: 5px 10px;
-  transition: color 0.3s, transform 0.3s;
-}
-
-.header-nav-link:hover {
-  color: #381f1f;
-  transform: scale(1.1);
-}
 
 .hero-image {
   width: 100%;
@@ -86,6 +113,7 @@ button:hover {
   padding: 20px;
   max-width: 1800px;
   margin: 0 auto;
+  justify-content: center;
 }
 
 @media (min-width: 1600px) {
@@ -97,12 +125,12 @@ button:hover {
 
 .grid-card {
   background-color: #b5bca8;
+  color: white;
   border: 1px solid white;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   padding: 10px;
-  grid-column: span 4;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -112,7 +140,17 @@ button:hover {
 }
 
 @media (min-width: 600px) {
-  .grid-card {
+  .grid-card:nth-child(1) {
+    grid-column: span 3;
+  }
+
+  .grid-card:nth-child(2),
+  .grid-card:nth-child(3),
+  .grid-card:nth-child(4) {
+    grid-column: span 1;
+  }
+
+  .grid-card:nth-child(5) {
     grid-column: span 2;
   }
 }
