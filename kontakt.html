@@ -5,23 +5,72 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KONTAKT</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600&family=Julius+Sans+One&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <h1>Kontakt</h1>
-  <form action="#" method="post">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
+  <header>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <a href="index.html">
+          <img class="logo" src="images/logga1.jpg" alt="Skin Expert Logo">
+        </a>
+      </div>
+      <div class="navbar-right">
+        <div class="nav-links">
+          <a href="#" class="header-nav-link">SKIN EXPERT</a>
+          <a href="#" class="header-nav-link">BUTIK</a>
+          <a href="#" class="header-nav-link">OM</a>
+          <a href="kontakt.html" class="header-nav-link">KONTAKT</a>
+        </div>
+      </div>
+    </nav>
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>Welcome to Skin Expert</h1>
+        <p>Your one-stop solution for all skin care needs.</p>
+        <button>Läs mer</button>
+      </div>
+    </div>
+  </header>
 
-    <label for="email">E-post:</label>
-    <input type="email" id="email" name="email" required>
+  <main>
+    <h1>Kontakt</h1>
 
-    <label for="message">Meddelande:</label>
-    <textarea id="message" name="message" rows="4" required></textarea>
+    <fieldset>
+      <form action="#" method="post">
+        <legend>Dina kontaktuppgifter</legend>
+        <label for="name">Namn</label>
+        <input type="text" id="name" name="name" required>
 
-    <button type="submit">Skicka</button>
-  </form>
+        <label for="email">E-post</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Meddelande</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <fieldset>
+          <legend>Välj tjänster</legend>
+          <label for="service1">
+            <input type="checkbox" id="service1" name="services" value="service1">
+            Tjänst 1
+          </label>
+          <label for="service2">
+            <input type="checkbox" id="service2" name="services" value="service2">
+            Tjänst 2
+          </label>
+          <label for="service3">
+            <input type="checkbox" id="service3" name="services" value="service3">
+            Tjänst 3
+          </label>
+        </fieldset>
+
+        <button type="submit">Skicka</button>
+      </form>
+  </main>
 </body>
 
 </html>
