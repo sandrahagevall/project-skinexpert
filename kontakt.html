@@ -3,12 +3,19 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
   <title>KONTAKT</title>
   <link
     href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600&family=Julius+Sans+One&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    rel="stylesheet"
+  >
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
 </head>
 
 <body>
@@ -16,16 +23,35 @@
     <nav class="navbar">
       <div class="navbar-left">
         <a href="index.html">
-          <img class="logo" src="images/logga1.jpg" alt="Skin Expert Logo">
+          <img
+            class="logo"
+            src="images/logga1.jpg"
+            alt="Skin Expert Logo"
+          >
         </a>
       </div>
       <div class="navbar-right">
         <div class="nav-links">
-          <a href="#" class="header-nav-link">SKIN EXPERT</a>
-          <a href="#" class="header-nav-link">BUTIK</a>
-          <a href="#" class="header-nav-link">OM</a>
-          <a href="kontakt.html" class="header-nav-link">KONTAKT</a>
-          <a href="#" class="header-nav-link">LOGGA IN</a>
+          <a
+            href="#"
+            class="header-nav-link"
+          >SKIN EXPERT</a>
+          <a
+            href="#"
+            class="header-nav-link"
+          >BUTIK</a>
+          <a
+            href="#"
+            class="header-nav-link"
+          >OM</a>
+          <a
+            href="kontakt.html"
+            class="header-nav-link"
+          >KONTAKT</a>
+          <a
+            href="#"
+            class="header-nav-link"
+          >LOGGA IN</a>
         </div>
       </div>
     </nav>
@@ -40,45 +66,85 @@
   </header>
 
   <main>
-    <div class="form-container">
-      <h1 class="form-title">Kontakt</h1>
+    <div class="content-wrapper">
 
-      <form action="https://httpbin.org/anything" method="post">
+      <div class="form-block">
+        <h1>kontakt</h1>
 
-        <fieldset>
-          <legend>Dina kontaktuppgifter</legend>
+        <form
+          action="https://httpbin.org/anything"
+          method="post"
+        >
 
-          <label for="name">Namn</label>
-          <input type="text" id="name" name="name" required>
+          <fieldset>
+            <legend>Dina kontaktuppgifter</legend>
 
-          <label for="email">E-post</label>
-          <input type="email" id="email" name="email" required placeholder="example@email.com">
+            <label for="name">Namn</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+            >
 
-          <label for="message">Meddelande</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-        </fieldset>
+            <label for="email">E-post</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="example@email.com"
+            >
 
-        <fieldset>
-          <legend>Välj tjänster</legend>
+            <label for="message">Meddelande</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              required
+            ></textarea>
+          </fieldset>
 
-          <label for="service1">
-            <input type="checkbox" name="services" value="service1">
-            Tjänst 1
-          </label>
+          <fieldset>
+            <legend>Välj tjänster</legend>
 
-          <label for="service2">
-            <input type="checkbox" name="services" value="service2">
-            Tjänst 2
-          </label>
+            <label for="service1">
+              <input
+                type="checkbox"
+                id="service1"
+                name="services"
+                value="service1"
+              >
+              Tjänst 1
+            </label>
 
-          <label for="service3">
-            <input type="checkbox" name="services" value="service3">
-            Tjänst 3
-          </label>
-        </fieldset>
+            <label for="service2">
+              <input
+                type="checkbox"
+                id="service2"
+                name="services"
+                value="service2"
+              >
+              Tjänst 2
+            </label>
 
-        <button class="contact-btn" type="submit">Skicka</button>
-      </form>
+            <label for="service3">
+              <input
+                type="checkbox"
+                id="service3"
+                name="services"
+                value="service3"
+              >
+              Tjänst 3
+            </label>
+          </fieldset>
+
+          <button
+            class="contact-btn"
+            type="submit"
+          >Skicka</button>
+        </form>
+      </div>
 
       <div class="side-content">
         <h2>Hitta oss</h2>
@@ -87,14 +153,24 @@
         <p>E-post: kontakt@skinexpert.se</p>
       </div>
     </div>
+
   </main>
 
   <footer>
     <p>&copy; 2024 Skin Expert. All rights reserved.</p>
     <div class="social-media">
-      <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
-      <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
-      <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+      <a href="#"><img
+          src="images/facebook-icon.png"
+          alt="Facebook"
+        ></a>
+      <a href="#"><img
+          src="images/instagram-icon.png"
+          alt="Instagram"
+        ></a>
+      <a href="#"><img
+          src="images/twitter-icon.png"
+          alt="Twitter"
+        ></a>
     </div>
   </footer>
 </body>
