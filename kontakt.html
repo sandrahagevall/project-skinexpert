@@ -48,10 +48,6 @@
             href="kontakt.html"
             class="header-nav-link"
           >KONTAKT</a>
-          <a
-            href="#"
-            class="header-nav-link"
-          >LOGGA IN</a>
         </div>
       </div>
     </nav>
@@ -66,85 +62,82 @@
   </header>
 
   <main>
+    <h1 class="form-title">Kontakt</h1>
+
     <div class="content-wrapper">
+      <form
+        action="https://httpbin.org/anything"
+        method="post"
+      >
 
-      <div class="form-block">
-        <h1>kontakt</h1>
+        <fieldset>
+          <legend>Dina kontaktuppgifter</legend>
 
-        <form
-          action="https://httpbin.org/anything"
-          method="post"
-        >
+          <label for="name">Namn</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+          >
 
-          <fieldset>
-            <legend>Dina kontaktuppgifter</legend>
+          <label for="email">E-post</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="example@email.com"
+          >
 
-            <label for="name">Namn</label>
+          <label for="message">Meddelande</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            required
+          ></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Välj tjänster</legend>
+
+          <label for="service1">
             <input
-              type="text"
-              id="name"
-              name="name"
-              required
+              type="checkbox"
+              id="service1"
+              name="services"
+              value="service1"
             >
+            Tjänst 1
+          </label>
 
-            <label for="email">E-post</label>
+          <label for="service2">
             <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              placeholder="example@email.com"
+              type="checkbox"
+              id="service2"
+              name="services"
+              value="service2"
             >
+            Tjänst 2
+          </label>
 
-            <label for="message">Meddelande</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="4"
-              required
-            ></textarea>
-          </fieldset>
+          <label for="service3">
+            <input
+              type="checkbox"
+              id="service3"
+              name="services"
+              value="service3"
+            >
+            Tjänst 3
+          </label>
+        </fieldset>
 
-          <fieldset>
-            <legend>Välj tjänster</legend>
-
-            <label for="service1">
-              <input
-                type="checkbox"
-                id="service1"
-                name="services"
-                value="service1"
-              >
-              Tjänst 1
-            </label>
-
-            <label for="service2">
-              <input
-                type="checkbox"
-                id="service2"
-                name="services"
-                value="service2"
-              >
-              Tjänst 2
-            </label>
-
-            <label for="service3">
-              <input
-                type="checkbox"
-                id="service3"
-                name="services"
-                value="service3"
-              >
-              Tjänst 3
-            </label>
-          </fieldset>
-
-          <button
-            class="contact-btn"
-            type="submit"
-          >Skicka</button>
-        </form>
-      </div>
+        <button
+          class="contact-btn"
+          type="submit"
+        >Skicka</button>
+      </form>
 
       <div class="side-content">
         <h2>Hitta oss</h2>
