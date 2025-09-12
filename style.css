@@ -319,8 +319,17 @@ input::placeholder {
     max-width: 600px;
   }
 
-  form input,
-  form textarea {
+  legend {
+    font-size: 20px;
+  }
+
+  label {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  input,
+  textarea {
     max-width: 100%;
   }
 
