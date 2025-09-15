@@ -1,6 +1,6 @@
 # js-project-business-site
 
-En enkel hemsida byggd med HTML och CSS
+Project business site, build with HTML and CSS
 
 ## Live-demo
-Projektet: [Skin Expert](https://skinexpert.netlify.app/)
+Project: [Skin Expert](https://skinexpert.netlify.app/)
