@@ -569,3 +569,7 @@ footer {
 .social-media img:hover {
   transform: scale(1.1);
 }
+
+.no-scroll {
+  overflow: hidden;
+}
